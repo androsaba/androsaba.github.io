@@ -5,13 +5,14 @@ permalink: /about/
 #subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
-  align: left
-  image: ai_robot.jpeg
-  image_circular: false # crops the image to make it circular
+   align: left
+   image: ai_robot.jpeg
+   image_circular: false # crops the image to make it circular
   #more_info: >
   #  <p>555 your office number</p>
   #  <p>123 your address street</p>
   #  <p>Your City, State 12345</p>
+ 
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts

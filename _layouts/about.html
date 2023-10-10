@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <!-- about.html -->
       <div class="post">
         <header class="post-header">
@@ -22,12 +21,19 @@ layout: default
               {% else %}
                 {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
               {% endif %}
-
+              
+            
               {% include figure.html
               path=profile_image_path
               class=profile_image_class
               alt=page.profile.image
               cache_bust=true -%}
+            
+              {% include figure.html
+                path='assets/img/japanh.jpg'
+                class=profile_image_class
+                cache_bust=true -%}
+ 
             {% endif -%}
             {%- if page.profile.more_info %}
             <div class="more-info">
