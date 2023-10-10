@@ -29,7 +29,11 @@
         {%- if page.title == nil or page.title == "" -%}
             {{ page.date | date: "%Y" }} | {{ title }}
         {%- else -%}
-            {{ page.title }} | {{ title }}
+            {%- if paginator.page == 1 -%}
+                {{ title }}
+            {%- else -%}    
+                {{ page.title }} | {{ title }}
+            {%- endif -%}    
         {%- endif -%}
     {%- else -%}
         {{ title }}

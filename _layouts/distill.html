@@ -30,10 +30,10 @@
           "authorURL": "{{ author.url }}",
           "affiliations": [
             {
-              "name": "{{ author.affiliations.name }}",
-              "url": "{{ author.affiliations.url }}"
+              "name": "{{ author.affiliations.name }}", 
+               "url": "{{ author.affiliations.url }}"
             }
-          ]
+                    ]
         }{% if forloop.last == false %},{% endif %}
         {% endfor %}
       ],

@@ -216,8 +216,9 @@ blockquote {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
+  background-color: $cyan-color; //var(--global-bg-color);
   opacity: 0.95;
+  font-size: 13px;
 }
 
 .navbar .dropdown-menu {
@@ -254,24 +255,24 @@ blockquote {
   }
 
   .navbar-brand {
-    color: var(--global-text-color);
+    color: $white-color; //var(--global-text-color);
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    color: $white-color; //var(--global-text-color);
 
     &:hover {
-      color: var(--global-hover-color);
+      color: $white-color; //var(--global-hover-color);
     }
   }
 
   .navbar-nav .nav-item.active>.nav-link {
     background-color: inherit;
     font-weight: bolder;
-    color: var(--global-theme-color);
+    color: $white-color; //var(--global-theme-color);
 
     &:hover {
-      color: var(--global-hover-color);
+      color: $white-color; //var(--global-hover-color);
     }
   }
 
@@ -406,11 +407,11 @@ blockquote {
 
 // Footer
 footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
+  background-color: var(--global-bg-color);
   font-size: 0.75rem;
 
   .container {
-    color: var(--global-footer-text-color);
+    color: var(--global-text-color); //var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
   }
@@ -556,11 +557,12 @@ footer.sticky-bottom {
     }
 
     &.active .page-link {
-      color: $white-color;
-      background-color: var(--global-theme-color);
+      color: $light-cyan-color; //$black-color;
+      box-shadow: none;
+      background-color: transparent; //$white-color;
 
       &:hover {
-        background-color: var(--global-theme-color);
+        background-color: transparent; //$white-color; //var(--global-theme-color);
       }
     }
   }
