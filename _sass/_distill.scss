@@ -26,9 +26,9 @@ d-article {
     border-bottom-color: var(--global-divider-color) !important;
   }
   a {
-    color: var(--global-theme-color) !important;
+    color: #666 !important; //var(--global-text-color) 
     &:hover {
-      color: var(--global-theme-color) !important;
+      color: $cyan-color !important;
     }
   }
   b i {
