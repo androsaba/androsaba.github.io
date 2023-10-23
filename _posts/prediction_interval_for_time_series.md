@@ -9,7 +9,6 @@ featured: false
 
 authors:
   - name: Andro Sabashvili
-  #  url: "https://en.wikipedia.org/wiki/Albert_Einstein"
     affiliations:
       name: Myself #IAS, Princeton
   
