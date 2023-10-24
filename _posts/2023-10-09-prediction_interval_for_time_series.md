@@ -7,6 +7,8 @@ giscus_comments: false
 date: 2023-10-09
 featured: false
 
+post_image: "assets/img/prediction_intervals/SimulatedPaths_cropped.png"
+
 authors:
   - name: Andro Sabashvili
     affiliations:
@@ -63,7 +65,7 @@ We then use the first simulated value as the input to the model to generate a fo
 
  <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Path_Equation.png" class="img-fluid rounded" %}
+        {% include figure.html path="assets/img/prediction_intervals/Path_Equation.png" class="img-fluid rounded" %}
     </div>
 </div>
 
@@ -112,7 +114,7 @@ We utilize these ideas to generate a future path in the case of the Prophet mode
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Prophet_Trend.png" class="img-fluid rounded" %}
+        {% include figure.html path="assets/img/prediction_intervals/Prophet_Trend.png" class="img-fluid rounded" %}
     </div>
 </div>
 
@@ -121,7 +123,7 @@ Here we show some examples for prediction intervals constructed for the Prophet 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/SimulatedPaths.png" class="img-fluid rounded medium-zoom-image large-image" zoomable=true %}
+        {% include figure.html path="assets/img/prediction_intervals/SimulatedPaths.png" class="img-fluid rounded medium-zoom-image large-image" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -129,7 +131,7 @@ Here we show some examples for prediction intervals constructed for the Prophet 
 </div>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/PredictionInterval_Positive.png" class="img-fluid rounded" zoomable=true %}
+        {% include figure.html path="assets/img/prediction_intervals/PredictionInterval_Positive.png" class="img-fluid rounded" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -138,7 +140,7 @@ Here we show some examples for prediction intervals constructed for the Prophet 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/PredictionInterval_TimeAggregated.png" class="img-fluid rounded" zoomable=true%}
+        {% include figure.html path="assets/img/prediction_intervals/PredictionInterval_TimeAggregated.png" class="img-fluid rounded" zoomable=true%}
     </div>
 </div>
 <div class="caption">
@@ -147,7 +149,7 @@ Here we show some examples for prediction intervals constructed for the Prophet 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/PredictionInterval_TimeSeriesAggregated.png" class="img-fluid rounded" zoomable=true%}
+        {% include figure.html path="assets/img/prediction_intervals/PredictionInterval_TimeSeriesAggregated.png" class="img-fluid rounded" zoomable=true%}
     </div>
 </div>
 <div class="caption">
@@ -156,7 +158,7 @@ Here we show some examples for prediction intervals constructed for the Prophet 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/PredictionInterval_Time_TimeSeries_Aggregated.png" class="img-fluid rounded" zoomable=true%}
+        {% include figure.html path="assets/img/prediction_intervals/PredictionInterval_Time_TimeSeries_Aggregated.png" class="img-fluid rounded" zoomable=true%}
     </div>
 </div>
 <div class="caption">
