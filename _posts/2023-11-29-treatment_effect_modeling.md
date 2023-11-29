@@ -291,4 +291,4 @@ As we discussed in the introduction it is important to incorporate treatments in
 | **Synthetic Control** | **Targete Transformation** Method |
 
 **DiD** and **Synthetic Control** are used when intervention already occurred, post-intervention values of the treatment group are already observed and we want to estimate the effect. But if we want to predict the uplift before the intervention **2-Model** and **Target Transformation** approaches are relevant.
-And lastly, **Synthetic Control** is the only method out of these four which allows using time series of completely different variables than the one in the treatment group as a control and additionally, unlike **DiD**, it allows using the same variable but dissimilar time series compared to the treatment group as control.
+And lastly, **Synthetic Control** is the only method out of these four which allows using time series of completely different variables than the one in the treatment group as a control and additionally, unlike **DiD**, it allows using a dissimilar time series of the same variable as a control.
