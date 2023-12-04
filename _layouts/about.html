@@ -6,9 +6,31 @@ layout: default
         <header class="post-header">
           <h1 class="post-title">
             {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+            {% if page.social %}
+                <div class="contact-icons float-right">
+                    {% include social.html %}
+                </div>
+            {% endif %}
           </h1>
           <p class="desc">{{ page.subtitle }}</p>
         </header>
+        
+        <style>
+          .image-gallery {
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+              grid-gap: 10px;
+          }
+
+          .image-gallery img {
+              width: 100%;
+              height: auto;
+          }
+          .contact-icons a {
+                 color: black; /* Change the color to black */
+                 font-size: 25px; /* Adjust the font size as needed */
+          } 
+       </style>
 
         <article>
           {% if page.profile -%}
@@ -22,18 +44,12 @@ layout: default
                 {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
               {% endif %}
               
-            
               {% include figure.html
               path=profile_image_path
               class=profile_image_class
               alt=page.profile.image
               cache_bust=true -%}
-            
-              {% include figure.html
-                path='assets/img/japanh.jpg'
-                class=profile_image_class
-                cache_bust=true -%}
- 
+        
             {% endif -%}
             {%- if page.profile.more_info %}
             <div class="more-info">
@@ -42,9 +58,18 @@ layout: default
             {%- endif %}
           </div>
           {%- endif %}
-
+           
           <div class="clearfix">
             {{ content }}
+          </div>
+
+          <!-- Gallery -->
+          <div class="image-gallery">
+              {% for image in site.static_files %}
+                {% if image.path contains '/gallery/' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.name }}" class="img-fluid">
+                {% endif %}
+              {% endfor %}
           </div>
 
           <!-- News -->
@@ -65,19 +90,7 @@ layout: default
             {%- include selected_papers.html %}
           {%- endif %}
 
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
-          {%- endif %}
+          
         </article>
 
-</div>
+      </div>
