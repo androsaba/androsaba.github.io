@@ -26,6 +26,14 @@ layout: default
               width: 100%;
               height: auto;
           }
+
+          /* Target the specific images you want to span across two columns */
+          .image-gallery img:nth-child(1),
+          .image-gallery img:nth-child(2),
+          .image-gallery img:nth-child(3) {
+            grid-column: span 3;
+          }
+
           .contact-icons a {
                  color: black; /* Change the color to black */
                  font-size: 25px; /* Adjust the font size as needed */
