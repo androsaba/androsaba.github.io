@@ -7,7 +7,7 @@ giscus_comments: false
 date: 2024-06-06
 featured: false
 
-post_image: "assets/img/treatment_effect_estimation/churn.png"
+post_image: "assets/img/forecasting_benchmarks_practice/image12.png"
 
 
 authors:
