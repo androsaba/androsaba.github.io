@@ -34,8 +34,9 @@ _styles: >
     }    
 ---
 
+This paper discusses the scenarios when balancing techniques (SMOTE, under/over sampling) are beneficial.
 - When the objective metric is proper: <d-footnote> A metric is proper when it is optimized by a classifier predicting the true class probabilities. For example, it is easy to see that Brier score is proper and even though AUC is generally not proper under the i.i.d assumption it is proper.</d-footnote> 
-    - we empirically show that: Balancing could improve prediction performance for weak classifiers such as MLP, SVM, decision tree, Adaboost and LGBM  but not for the SOTA classifiers (XGBoost and Catboost). The strong classifiers (without balancing) yield better prediction quality than the weak classifiers with balancing. 
+    - One can empirically show that balancing could improve prediction performance for weak classifiers such as MLP, SVM, decision tree, Adaboost and LGBM  but not for the SOTA classifiers (XGBoost and Catboost). The strong classifiers (without balancing) yield better prediction quality than the weak classifiers with balancing. 
 
 - When the objective is a label metric:
     - Fixed threshold:
