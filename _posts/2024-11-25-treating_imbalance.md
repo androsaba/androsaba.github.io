@@ -34,21 +34,21 @@ _styles: >
     }    
 ---
 
-- When the objective metric is proper <d-footnote> A metric is proper when it is optimized by a classifier predicting the true class probabilities. For example, it is easy to see that Brier score is proper and even though AUC is generally not proper under the i.i.d assumption it is proper.</d-footnote> 
+- When the objective metric is proper: <d-footnote> A metric is proper when it is optimized by a classifier predicting the true class probabilities. For example, it is easy to see that Brier score is proper and even though AUC is generally not proper under the i.i.d assumption it is proper.</d-footnote> 
     - we empirically show that: Balancing could improve prediction performance for weak classifiers such as MLP, SVM, decision tree, Adaboost and LGBM  but not for the SOTA classifiers (XGBoost and Catboost). The strong classifiers (without balancing) yield better prediction quality than the weak classifiers with balancing. 
 
-- When the objective is a label metric
-    - Fixed threshold
+- When the objective is a label metric:
+    - Fixed threshold:
         - balancing considerably improved prediction performance for all classifiers.
-    - Optimized threshold
+    - Optimized threshold:
         - strong and medium classifiers: Balancing and optimizing the decision threshold provide similar prediction quality. However, optimizing the decision threshold is recommended due to simplicity and lower compute cost.
         - very weak classifiers (MLP and SVM): balancing the data is significantly beneficial over the optimizing the decision threshold. Nevertheless, the resulting prediction quality will be significantly worse compared to using a strong classifier (without oversampling).
     - When balancing (instead of optimizing the decision threshold) SMOTE-like methods were not significantly better than the simple random oversampler.
 
-- scenarios for which SMOTE-like oversampling can improve prediction performance and should be applied
-    - Proper metric
+- scenarios for which SMOTE-like oversampling can improve prediction performance and should be applied:
+    - Proper metric:
         - balancing is significantly effective when using a weak classifier 
-    - Label metric
+    - Label metric:
         - When Optimize threshold is possible
             - balancing was beneficial (over optimization of decision threshold) only for the weak MLP and SVM classifiers. best prediction for them was achieved by oversampling with SMOTE. 
         - When not possible to optimize decision threshold
