@@ -46,10 +46,10 @@ This paper discusses the scenarios when balancing techniques (SMOTE, under/over 
         - very weak classifiers (MLP and SVM): balancing the data is significantly beneficial over the optimizing the decision threshold. Nevertheless, the resulting prediction quality will be significantly worse compared to using a strong classifier (without oversampling).
     - When balancing (instead of optimizing the decision threshold) SMOTE-like methods were not significantly better than the simple random oversampler.
 
-- scenarios for which SMOTE-like oversampling can improve prediction performance and should be applied:
-    - Proper metric:
+- Scenarios for which SMOTE-like oversampling can improve prediction performance and should be applied:
+    - in case of the proper metric:
         - balancing is significantly effective when using a weak classifier 
-    - Label metric:
-        - When Optimize threshold is possible
-            - balancing was beneficial (over optimization of decision threshold) only for the weak MLP and SVM classifiers. best prediction for them was achieved by oversampling with SMOTE. 
+    - in case of the label metric:
+        - When threshold optimization is possible
+            - balancing was beneficial (over optimization of decision threshold) only for the weak MLP and SVM classifiers. Best prediction for them was achieved by oversampling with SMOTE. 
         - When not possible to optimize decision threshold
