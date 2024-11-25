@@ -34,7 +34,7 @@ _styles: >
     }    
 ---
 
-This paper discusses the scenarios when balancing techniques (SMOTE, under/over sampling) are beneficial.
+This paper discusses the effect of the balancing techniques (SMOTE, under/over sampling) for imbalanced samples.
 - When the objective metric is proper: <d-footnote> A metric is proper when it is optimized by a classifier predicting the true class probabilities. For example, it is easy to see that Brier score is proper and even though AUC is generally not proper under the i.i.d assumption it is proper.</d-footnote> 
     - One can empirically show that balancing could improve prediction performance for weak classifiers such as MLP, SVM, decision tree, Adaboost and LGBM  but not for the SOTA classifiers (XGBoost and Catboost). The strong classifiers (without balancing) yield better prediction quality than the weak classifiers with balancing. 
 
@@ -46,6 +46,7 @@ This paper discusses the scenarios when balancing techniques (SMOTE, under/over 
         - very weak classifiers (MLP and SVM): balancing the data is significantly beneficial over the optimizing the decision threshold. Nevertheless, the resulting prediction quality will be significantly worse compared to using a strong classifier (without oversampling).
     - When balancing (instead of optimizing the decision threshold) SMOTE-like methods were not significantly better than the simple random oversampler.
 
+### Conclusion
 - Scenarios for which SMOTE-like oversampling can improve prediction performance and should be applied:
     - in case of the proper metric:
         - balancing is significantly effective when using a weak classifier 
