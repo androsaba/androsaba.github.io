@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: More Is Different
-description: A P.W. Anderson paper published in Science 1972
+description: Quotes from P.W. Anderson's paper published in Science in 1972.
 tags: #distill formatting
 giscus_comments: false
 date: 2024-11-25
