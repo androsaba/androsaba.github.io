@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: More Is Different
-description: Quotes from P.W. Anderson's paper published in Science in 1972.
+description: Quotes from P.W. Anderson's paper published in Science, 1972.
 tags: #distill formatting
 giscus_comments: false
 date: 2024-11-25
@@ -59,6 +59,6 @@ There are at least three inferences to be drawn from this. One is that symmetry 
 The second inference is that the internal structure of a piece of matter need not be symmetrical even if the total state of it is.
 A third insight is that the state of a really big system does not at all have to have the symmetry of the laws which govern it, in fact, it usually has less symmetry. The outstanding example of this is the crystal: Built from a substrate of atoms and space according to laws which express the perfect homogeneity of spaces the crystal suddenly and unpredictabIy displays an entirely new and very beautiful symmetry. The general rule, however, even in the case of the crystal, is that the large system is less symmetrical than the underlying structure would suggest: Symmetrical as it is, a crystal is less symmetrical than perfect homogeneity.
 
-The essential idea is that in the so called N -> Infinity limit of large systems ;(on our own, macroscopic scale) it is not only convenient but essential to realize that matter will undergo mathematically sharp, singular 'phase transitions' to states in which the microscopic symmetries, and even the microscopic equations of motion, are in a sense violated. In this case we can see how the whole becomes not only more than but very different from the sum of its parts.
+The essential idea is that in the so called N -> Infinity limit of large systems; (on our own, macroscopic scale) it is not only convenient but essential to realize that matter will undergo mathematically sharp, singular 'phase transitions' to states in which the microscopic symmetries, and even the microscopic equations of motion, are in a sense violated. In this case we can see how the whole becomes not only more than but very different from the sum of its parts.
 
 In closing, I offer two examples from economics of what I hope to have said. Marx said that quantitative differences become qualitative ones, but a dialogue in Paris in the 1920's sums it up even more clearly: FITZGERALD: The rich are different from us. HEMINGWAY: Yes, they have more money.
